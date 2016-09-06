@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Precision Devices Inc.</title>
+  </head>
+
+  <body>
+    <div style="margin-bottom: 5px; border-bottom:1px solid black" class="row"> 
+      <div id="logo"class="col-md-12">
+        <img src="PDI-logo-final.jpg"/>
+      </div>
+     </div>
+
+    <div class="row">
+     <ul class="menuBar">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="clickable"><a href="products.html">Products</a>
+        <ul>
+          <li><a href="amc.html"><i>ADVANCED</i> Motion Controls</a></li>
+          <li><a href="#">Bardac</a></li>
+          <li><a href="dover.html">Dover Flexo</a></li>
+          <li><a href="nanotec.html">NanoTec</a></li>
+          <li><a href="trutech.html">TruTech</a></li>
+        </ul>
+      </li>
+      <li><a href="catalogs.html">Catalogs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+    </div>
+    <!--Start of unique page code-->
+    <div class="row">
+      <div class="logos">
+        <a href="http://www.bardac.com" target="_blank"><img class="mainlogos" style="margin-top: 10px" src="bardac.gif" /></a> 
+      </div>
+    </div>
+
+      <div style="text-align: center">
+        <img src="bardacpage.png" style="text-align: center">
+      </div>
+    
+
+    <!--End of unique page code-->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".clickable").hover( 
+          function() {
+        $("li ul").css("visibility", "visible");
+          }, function() {
+        $("li ul").css("visibility", "hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

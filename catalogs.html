@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Precision Devices Inc.</title>
+  </head>
+
+  <body>
+    <div style="margin-bottom: 5px; border-bottom:1px solid black" class="row"> 
+      <div id="logo"class="col-md-12">
+        <img src="PDI-logo-final.jpg"/>
+      </div>
+     </div>
+
+    <div class="row">
+     <ul class="menuBar">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="clickable"><a href="products.html">Products</a>
+        <ul>
+          <li><a href="amc.html"><i>ADVANCED</i> Motion Controls</a></li>
+          <li><a href="bardac.html">Bardac</a></li>
+          <li><a href="dover.html">Dover Flexo</a></li>
+          <li><a href="nanotec.html">NanoTec</a></li>
+          <li><a href="trutech.html">TruTech</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Catalogs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+    </div>
+    <!--Start of unique page code-->
+    <div class= "row">
+      <div class="col-md-5">
+        <div class="logos">
+          <a href="http://www.a-m-c.com/support/downloadable_resources.html" target="_blank"><img style="margin-top:10px" class="mainlogos" src="amcmain.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <a href="http://www.a-m-c.com/support/downloadable_resources.html" target="_blank"><h2 style="margin-top:100px"><i>ADVANCED</i> Motion Controls Downloadable Resources<h2></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+      <div style="height: 5px; border-bottom: 2px solid black">
+      </div>
+    </div>
+    </div>
+
+    <div class= "row">
+      <div class="col-md-5">
+        <div class="logos">
+          <a href="http://www.bardac.com/pages/support/sales/catalog/catalog_complete.pdf" target="_blank"><img style="margin-top:10px" class="mainlogos" src="bardacmain.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <a href="http://www.bardac.com/pages/support/sales/catalog/catalog_complete.pdf" target="_blank"><h2 style="margin-top:100px">Bardac Catalog<h2></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+      <div style="height: 5px; border-bottom: 2px solid black">
+      </div>
+    </div>
+    </div>
+
+    <div class= "row">
+      <div class="col-md-5">
+        <div class="logos">
+          <a href="http://www.dfe.com/resources.html" target="_blank"><img style="margin-top:10px" class="mainlogos" src="dfemain.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <a href="http://www.dfe.com/resources.html" target="_blank"><h2 style="margin-top:100px">Dover Flexo Electronics Resources<h2></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+      <div style="height: 5px; border-bottom: 2px solid black">
+      </div>
+    </div>
+    </div>
+
+    <div class= "row">
+      <div class="col-md-5">
+        <div class="logos">
+          <a href="http://us.nanotec.com/fileadmin/files/Katalog/Nanotec_Katalog_2014_EN_neu.pdf" target="_blank"><img style="margin-top:10px" class="mainlogos" src="nanotecmain.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <a href="http://us.nanotec.com/fileadmin/files/Katalog/Nanotec_Flyer_2015_US.pdf" target="_blank"><h2 style="margin-top: 50px">Nanotec New Products</h2></a>
+        <a href="http://us.nanotec.com/fileadmin/files/Katalog/Nanotec_Catalog_2015.pdf" target="_blank"><h2 style="margin-top:100px">Nanotec Catalog<h2></a>
+      </div>
+    </div>
+
+
+    <!--End of unique page code-->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".clickable").hover( 
+          function() {
+        $("li ul").css("visibility", "visible");
+          }, function() {
+        $("li ul").css("visibility", "hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Precision Devices Inc.</title>
+  </head>
+
+  <body>
+    <div style="margin-bottom: 5px; border-bottom:1px solid black" class="row"> 
+      <div id="logo"class="col-md-12">
+        <img src="PDI-logo-final.jpg"/>
+      </div>
+     </div>
+
+    <div class="row">
+     <ul class="menuBar">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="clickable"><a href="products.html">Products</a>
+        <ul>
+          <li><a href="amc.html"><i>ADVANCED</i> Motion Controls</a></li>
+          <li><a href="bardac.html">Bardac</a></li>
+          <li><a href="#">Dover Flexo</a></li>
+          <li><a href="nanotec.html">NanoTec</a></li>
+          <li><a href="trutech.html">TruTech</a></li>
+        </ul>
+      </li>
+      <li><a href="catalogs.html">Catalogs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+    </div>
+    <!--Start of unique page code-->
+    <div class="row">
+      <div class="logos">
+        <a href="http://www.dfe.com/index.html" target="_blank"><img style="margin-top: 10px" class="mainlogos" src="dfe.png" /></a> 
+      </div>
+    </div>
+    <div class="row">
+      <div style="text-align: center">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/Cb3n70drPZo" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="rest">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="logos">
+          <a class="linked" href="http://www.dfe.com/products/transducers.html" target="_blank"><h3>Tension Transducers</h3></a>
+          <a href="http://www.dfe.com/products/transducers.html" target="_blank"><img src="dfe1.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="logos">
+          <a class="linked" href="http://www.dfe.com/products/indicators.html" target="_blank"><h3>Tension Amplifiers and Indicators</h3></a>
+          <a href="http://www.dfe.com/products/indicators.html" target="_blank"><img src="dfe2.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="logos">
+          <a class="linked" href="http://www.dfe.com/products/controllers.html" target="_blank"><h3>Tension Controllers</h3></a>
+          <a href="http://www.dfe.com/products/controllers.html" target="_blank"><img src="dfe3.jpg" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 5px" class="row">
+      <div class="col-md-4">
+        <div class="logos">
+          <a class="linked" href="http://www.dfe.com/products/brakes.html" target="_blank"><h3>Pneumatic Disk Brakes</h3></a>
+          <a href="http://www.dfe.com/products/brakes.html" target="_blank"><img src="dfe4.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="logos">
+          <a class="linked" href="http://www.dfe.com/products/idler_rolls.html" target="_blank"><h3>Aluminum Idler Rolls</h3></a>
+          <a href="http://www.dfe.com/products/idler_rolls.html" target="_blank"><img src="dfe5.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="logos">
+          <a class="linked" href="http://www.dfe.com/products/custom_solutions.html" target="_blank"><h3>Custom Engineered Solutions</h3></a>
+          <a href="http://www.dfe.com/products/custom_solutions.html" target="_blank"><img src="dfe6.jpg" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--End of unique page code-->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".clickable").hover( 
+          function() {
+        $("li ul").css("visibility", "visible");
+          }, function() {
+        $("li ul").css("visibility", "hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

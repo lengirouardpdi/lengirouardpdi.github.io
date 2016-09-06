@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+  	<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Precision Devices Inc.</title>
+  </head>
+
+  <body>
+    <div style="margin-bottom: 5px; border-bottom:1px solid black" class="row"> 
+      <div id="logo"class="col-md-12">
+        <img src="PDI-logo-final.jpg"/>
+      </div>
+     </div>
+
+    <div style="margin-bottom: -5px;" class="row">
+     <ul class="menuBar">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="clickable"><a href="products.html">Products</a>
+        <ul>
+          <li><a href="amc.html"><i>ADVANCED</i> Motion Controls</a></li>
+          <li><a href="bardac.html">Bardac</a></li>
+          <li><a href="dover.html">Dover Flexo</a></li>
+          <li><a href="nanotec.html">NanoTec</a></li>
+          <li><a href="trutech.html">TruTech</a></li>
+        </ul>
+      </li>
+      <li><a href="catalogs.html">Catalogs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+    </div>
+  
+  <div class= "rest">
+    
+      <h2 id="About">About Precision Devices</h2>
+    
+    <div class="row">
+      <div class = "col-md-3">
+      </div>
+      <div class="col-md-6">
+        <p>Precision Devices, Inc.  is located in the suburbs of Pittsburgh, Pennsylvania and since 1983 has been representing industrial product lines. The markets areas that have been the focus of our sales efforts are Western Pennsylvania, Ohio and Northern Kentucky, Michigan and Indiana. </p>
+      </div>
+    </div>
+
+    <h2>Our Product Lines</h2>
+  <div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="logos">
+          <a href="http://www.a-m-c.com/index.html" target="_blank"><img class="mainlogos" src="amcmain.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="logos">
+          <a href="http://www.bardac.com" target="_blank"><img class="mainlogos" src="bardacmain.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="logos">
+          <a href="http://www.dfe.com/index.html" target="_blank"><img class="mainlogos" src="dfemain.jpg" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <div class="logos">
+          <a href="http://us.nanotec.com" target="_blank"><img class="mainlogos" src="nanotecmain.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="logos">
+          <a href="http://www.trutechmotors.com" target="_blank"><img class="mainlogos" src="trutechmain.jpeg" /></a>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".clickable").hover( 
+          function() {
+        $("li ul").css("visibility", "visible");
+          }, function() {
+        $("li ul").css("visibility", "hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

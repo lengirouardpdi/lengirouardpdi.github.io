@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Precision Devices Inc.</title>
+  </head>
+
+  <body>
+    <div style="margin-bottom: 5px; border-bottom:1px solid black" class="row"> 
+      <div id="logo"class="col-md-12">
+        <img src="PDI-logo-final.jpg"/>
+      </div>
+     </div>
+
+    <div class="row">
+     <ul class="menuBar">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="clickable"><a href="products.html">Products</a>
+        <ul>
+          <li><a href="#"><i>ADVANCED</i> Motion Controls</a></li>
+          <li><a href="bardac.html">Bardac</a></li>
+          <li><a href="dover.html">Dover Flexo</a></li>
+          <li><a href="nanotec.html">NanoTec</a></li>
+          <li><a href="trutech.html">TruTech</a></li>
+        </ul>
+      </li>
+      <li><a href="catalogs.html">Catalogs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+    </div>
+    <!--Start of unique page code-->
+    <div class="row">
+      <div class="logos">
+        <a href="http://www.a-m-c.com/index.html" target="_blank"><img style="margin-top: 10px" class="mainlogos" src="amc.jpg" /></a> 
+      </div>
+    </div>
+    <div id="amcspaceone" class="row">
+      <div class="col-md-6" style="text-align: center">
+        <a href="http://www.a-m-c.com/products/drives.html" target="_blank"><img style="margin-left: 10px" src="amcservo.png" /></a>
+      </div>
+      <div class="col-md-6" style="text-align: center">
+        <a href="http://www.a-m-c.com/products/custom-products.html" target="_blank"><img src="amccustom.png" /></a> 
+      </div>
+    </div>
+    <div class = "row">
+      <div class="col-md-6">
+        <h3>New Products</h3>
+        <p style="margin-left: 10px"><a href="http://www.a-m-c.com/products/dze.html" target="_blank">DxM Technology over EtherCAT&reg;</a> |  <a href="http://www.a-m-c.com/products/ethercat.html" target="_blank">EtherCAT&reg; Enabled Drives</a> |<br /> |<a href="http://www.a-m-c.com/products/vehicle.html" target="_blank">M/V&trade; series Electric Vehicle Motor Controls</a> |
+     <a href="http://www.a-m-c.com/products/extended.html" target="_blank">Extended Environment Drives</a> | </p>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Additional Products</h3>
+        <p>| <a href="http://www.a-m-c.com/products/clickandmove.html" target="_blank">Click&amp;Move&reg;</a> | <a href="http://www.a-m-c.com/products/driveware.html" target="_blank">DriveWare&reg;</a>  | <a href="http://www.a-m-c.com/products/power-supplies.html" target="_blank">Power Supplies</a> | <a href="http://www.a-m-c.com/products/filter-cards.html" target="_blank">Filter Cards</a> |<br /> | <a href="http://www.a-m-c.com/products/mounting-cards.html" target="_blank">Mounting Cards</a> | <a href="http://www.a-m-c.com/products/shunt-regulators.html" title="Shunt regulators" target="_blank">Shunt Regulators</a> |
+    </p>   
+  </div>
+</div>
+
+
+
+    <!--End of unique page code-->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".clickable").hover( 
+          function() {
+        $("li ul").css("visibility", "visible");
+          }, function() {
+        $("li ul").css("visibility", "hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
